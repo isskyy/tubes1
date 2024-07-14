@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>TUGAS 2</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url(gambar\ 6.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding-top: 20%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(gambar8.jpg);
+        }
+        .navbar {
+            background-color: #000000 !important;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+        .card {
+            border: none;
+            border-radius: 1rem;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .dropdown-item {
+            color: black;
+            background: #ff0000;
+            display: block;
+            float: left;
+            padding: 1rem;
+            position: relative;
+            text-decoration: none;
+            transition-duration: 0.5s;
+        }
+
+        .dropdown-item:hover,
+        .dropdown-item:focus {
+            background: white;
+            cursor: pointer;
+        }
+
+        .dropdown-item:focus {
+            outline: none;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #ff0000;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px black;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkorange;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ff0000;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#">░v░a░p░e░ ░s░t░o░r░e░</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toogle" href="#" id="navbarDropdown" role= "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Product
+                        </a>
+
+
+                        <div class="dropdown-menu" aria-label="submenu" >
+                           <a class="dropdown-item" href="#">𝖈𝖊𝖓𝖙𝖆𝖚𝖗𝖚𝖘</a>
+                            <a class="dropdown-item" href="#">𝕙𝕖𝕩𝕠𝕙𝕞</a>
+                            <a class="dropdown-item" href="#">🆁234</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://static.vecteezy.com/system/resources/previews/010/447/431/original/a-community-or-vape-shop-logo-with-an-elegant-and-cool-skull-shape-vector.jpg" alt="...">
+            </div>
+            <div class="col-lg-5">
+                <h1 style="color: black;" class="font-weight-light">𝓿𝓪𝓹𝓮 𝓼𝓽𝓸𝓻𝓮</h1>
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://th.bing.com/th/id/OIP.0w6UWsCWOz4HnQl4ZWKH3gHaGD?rs=1&pid=ImgDetMain" alt="...">
+                <p style="color:black ;" class="lead">Sudah bukan rahasia kalau vaping tidak meninggalkan residu saat digunakan.
+                     Tidak seperti rokok yang kerap meninggalkan abu dan puntung yang bisa mengganggu kalau sudah banyak, 
+                     vaping hanya mengandalkan liquid dan pod yang bisa langsung kamu buang ketika sudah habis terpakai. </p>
+                     <button class="btn-primary" onclick="showConfirmationAlert()">Beli Sekarang</button>
+            </div>
+        </div>
+        <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card-body">
+                <p class="text-white m-0">🆅🅰🅿🅴 🆂🆃🅾🆁🅴</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                      <center> <h2 class="card-title">𝖈𝖊𝖓𝖙𝖆𝖚𝖗𝖚𝖘</h2> </center>
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.lepetitvapoteur.com/41202-large_default/pack-centaurus-m200-lost-vape.jpg" alt="...">
+                        <p class="card-text">Lost Vape selalu selalu membuat produk dengan kualitas premium yang telah terbukti,
+                             seperti Mod Centaurus M200. Menggunakan Chipset DNA, selama beberapa tahun, telah telah berkemabang pesat yang disebut “Quest”.</p>
+                    </div>
+                    <button class="btn btn-primary btn-sm" class="btn-primary" onclick="showConfirmationAlert()">Beli Sekarang</button>
+                   
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-5">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <center>  <h2 class="card-title">𝕙𝕖𝕩𝕠𝕙𝕞</h2> </center>
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="https://thebestvape.com/wp-content/uploads/2016/09/HexOhm-V3.0-Red.jpg" alt="...">
+                        <p class="card-text">HexOhm adalah BoxMod buatan Craving Vapor - Austin TX USA.
+                             (edit: Khusus untuk Indonesia, per July 2022 HexOhm sudah di assembly oleh vapezoo di Indonesia).
+                             Salah satu kelebihan dari HexOhm adalah Lifetime Warranty nya.</p>
+                        
+                    </div>
+                    <button class="btn btn-primary btn-sm" class="btn-primary" onclick="showConfirmationAlert()">Beli Sekarang</button>
+                </div>
+            </div>
+            
+
+            <div class="col-md-4 mb-5">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <center> <h2 class="card-title">🆁234</h2> </center>
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="https://vapeboss.co.id/assets/Foto-R234-Cyber-Barong__ResizedImageWzYwMCw2MDBd.jpg" alt="...">
+                        <p class="card-text">Dengan tema kombinasi teknologi cyber yang futuristik dengan budaya barong.
+                             Hotcig R234 Cyber Barong menggunakan chip HM yang memberikan power output maksimum 234 watt, firing tanpa delay, dan adanya klaim anti air. </p>
+                    </div>
+                    <button class="btn btn-primary btn-sm" class="btn-primary" onclick="showConfirmationAlert()">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-5 bg-dark">
+        <div class="container px-4 px-lg-5">
+            <p class="m-0 text-center">ⓥⓐⓟⓔ ⓢⓣⓞⓡⓔ</p>
+        </div>
+    </footer>
+    <script>
+        function showBasicAlert() {
+            Swal.fire('Hello world!');
+        }
+
+        function showTitleTextAlert() {
+            Swal.fire('Title', 'This is a text message.', 'info');
+        }
+
+        function showSuccessAlert() {
+            Swal.fire('Success', 'Operation was successful!', 'success');
+        }
+
+        function showErrorAlert() {
+            Swal.fire('Error', 'Something went wrong!', 'error');
+        }
+
+        function showWarningAlert() {
+            Swal.fire('Warning', 'This is a warning!', 'warning');
+        }
+
+        function showInfoAlert() {
+            Swal.fire('Info', 'This is some information.', 'info');
+        }
+
+        function showQuestionAlert() {
+            Swal.fire('Question', 'Do you want to proceed?', 'question');
+        }
+
+        function showCustomImageAlert() {
+            Swal.fire({
+                title: 'Custom Image',
+                text: 'This is a custom image alert.',
+                imageUrl: 'https://via.placeholder.com/150',
+                imageWidth: 150,
+                imageHeight: 150,
+                imageAlt: 'Custom image',
+            });
+        }
+
+        function showHTMLAlert() {
+            Swal.fire({
+                title: '<strong>HTML <u>example</u></strong>',
+                icon: 'info',
+                html: 'You can use <b>bold text</b>, <a href="//sweetalert2.github.io">links</a> and other HTML tags',
+                showCloseButton: true,
+                showCancelButton: true,
+                focusConfirm: false,
+                confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!',
+                confirmButtonAriaLabel: 'Thumbs up, great!',
+                cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+                cancelButtonAriaLabel: 'Thumbs down',
+            });
+        }
+
+        function showConfirmationAlert() {
+            Swal.fire({
+                title: 'Beli Sekarang?',
+                text: "",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Buy'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Terima kasih!',
+                        '',
+                        'success'
+                    )
+                }
+            })
+        }
+
+        function showTimerAlert() {
+            Swal.fire({
+                title: 'Auto close alert!',
+                text: 'I will close in 2 seconds.',
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: () => {
+                    Swal.showLoading()
+                },
+                willClose: () => {
+                    // do something when the alert is about to close
+                }
+            })
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
